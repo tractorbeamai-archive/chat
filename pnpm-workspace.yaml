@@ -7,3 +7,8 @@ minimumReleaseAge: 2880
 minimumReleaseAgeExclude:
   - "@vercel/connect"
   - "@vercel/geistdocs"
+  # Cloudflare publishes these packages almost daily.
+  - "@cloudflare/*"
+  - wrangler
+  - miniflare
+  - workerd

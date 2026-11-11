@@ -4,6 +4,13 @@ packages:
   - "examples/*"
 
 minimumReleaseAge: 2880
+configDependencies:
+  "@tractorbeam/pnpm-plugin-tractorbeam-defaults": latest
 minimumReleaseAgeExclude:
-  - "@vercel/connect"
-  - "@vercel/geistdocs"
+  - "@tractorbeam/pnpm-plugin-tractorbeam-defaults"
+allowBuilds:
+  "@nestjs/core": false
+  "@parcel/watcher": false
+  "@swc/core": false
+  cbor-extract: false
+  core-js-pure: false

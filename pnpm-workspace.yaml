@@ -4,11 +4,13 @@ packages:
   - "examples/*"
 
 minimumReleaseAge: 2880
+configDependencies:
+  "@tractorbeam/pnpm-plugin-tractorbeam-defaults": latest
 minimumReleaseAgeExclude:
-  - "@vercel/connect"
-  - "@vercel/geistdocs"
-  # Cloudflare publishes these packages almost daily.
-  - "@cloudflare/*"
-  - wrangler
-  - miniflare
-  - workerd
+  - "@tractorbeam/pnpm-plugin-tractorbeam-defaults"
+allowBuilds:
+  "@nestjs/core": false
+  "@parcel/watcher": false
+  "@swc/core": false
+  cbor-extract: false
+  core-js-pure: false
